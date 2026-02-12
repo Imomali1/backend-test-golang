@@ -1,0 +1,40 @@
+# Git
+.git
+.gitignore
+
+# Environment files (should be mounted or passed at runtime)
+.env
+.env.*
+!.env.example
+
+# Documentation
+*.md
+!README.md
+IMPLEMENTATION.md
+RATE_LIMITING.md
+
+# Tests
+*_test.go
+coverage.out
+test_*.sh
+
+# Build artifacts
+server
+*.out
+*.log
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
