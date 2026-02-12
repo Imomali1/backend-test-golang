@@ -68,35 +68,24 @@ __Пример__: юзер покупает какой-то предмет на 
 
 1. **Клонирование и настройка:**
    ```bash
-   git clone .
+   git clone git@github.com:Imomali1/backend-test-golang.git
    cd backend-test-golang
    cp .env.example .env
    # Отредактируйте .env при необходимости (стандартные значения работают с Docker)
    ```
 
-2. **Запуск PostgreSQL:**
+2. **Запуск приложения:**
    ```bash
    docker-compose up -d
    ```
-
-3. **Установка зависимостей:**
-   ```bash
-   go mod download
-   ```
-
-4. **Запуск сервера:**
-   ```bash
-   go run cmd/server/main.go
-   ```
-
-   Сервер запустится на http://localhost:8080
+   
+Сервер запустится на http://localhost:8080
 
 #### Альтернатива: Использование Makefile
 
 ```bash
-make setup    # Запустить базу данных
-make run      # Запустить сервер
-make stop     # Остановить базу данных
+make run      # Запустить приложения
+make stop     # Остановить приложения
 make clean    # Удалить все контейнеры и volumes
 ```
 

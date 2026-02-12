@@ -29,7 +29,7 @@ services:
     environment:
       ADDR: ":8080"
       DB_URL: "postgresql://postgres:postgres@postgres:5432/skinport_test?sslmode=disable"
-      SKINPORT_ADDR: "https://api.skinport.com"
+      SKINPORT_ADDR: "https://api.skinport.com/v1"
       SKINPORT_CLIENT_ID: ""
       SKINPORT_CLIENT_SECRET: ""
       CACHE_TTL: "300"
